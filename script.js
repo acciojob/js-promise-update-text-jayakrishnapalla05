@@ -1,8 +1,10 @@
 //your JS code here. If required.
 function prom(){
 	let a=new Promise((resolve) =>{
-		resolve("Hello, world!");
-	}, 1000);
+		setTimeout(() => {
+      resolve("Hello, world!");
+    }, 1000);
+	});
 	return a;
 }
 let Element=document.getElementById("output");
